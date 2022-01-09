@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolio</title>
+  </head>
+  <body>
+    <nav id="navbar" class="navbar">
+      <div class="container">
+        <img class="logo" src="img/logo2.jpg" alt="logo" />
+        <ul class="navlist">
+          <li>
+            <a class="navEl current" href="#welcome-section">About</a>
+          </li>
+          <li>
+            <a class="navEl proj">Projects</a>
+          </li>
+          <li>
+            <a class="navEl" href="#profiles">Contact</a>
+          </li>
+        </ul>
+        <button class="setting hidden">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+        </button>
+      </div>
+    </nav>
+
+    <ul class="modal hidden">
+      <li>
+        <a class="navEl current" href="#welcome-section">About</a>
+      </li>
+      <li>
+        <a class="navEl proj">Projects</a>
+      </li>
+      <li>
+        <a class="navEl" href="#profiles">Contact</a>
+      </li>
+    </ul>
+
+    <div id="welcome-section" class="welcome-section flex-center margin-bt-la">
+      <div class="container">
+        <h1 class="ws-heading">Personal Portfolio</h1>
+        <p class="ws-description"></p>
+      </div>
+    </div>
+
+    <div id="projects" class="projects margin-bt-la">
+      <div class="container">
+        <h2 class="heading margin-bt-med">Projects</h2>
+        <div class="project-tile flex-center">
+          <div class="pj--1 flex-center pjt">
+            <img
+              class="pj-img margin-bt-sm"
+              src="img/Project.PNG"
+              alt="Landing Page"
+            />
+            <div class="goto">
+              <a
+                target="_blank"
+                href="https://play-ground-five.vercel.app/"
+                class="btn web"
+                >Learn More &rarr;</a
+              >
+              <a
+                target="_blank"
+                href="https://github.com/NHWai/PlayGround"
+                class="btn code"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="myTechStack margin-bt-la">
+      <div class="container">
+        <h2 class="ts-heading heading">My Tech Stack</h2>
+        <div class="mts-imgs">
+          <img class="mts-img" src="img/html5.png" alt="html" />
+          <img class="mts-img" src="img/css3.png" alt="html" />
+          <img class="mts-img" src="img/js.png" alt="html" />
+        </div>
+      </div>
+    </div>
+
+    <div id="profiles" class="profiles flex-center">
+      <div class="container">
+        <a href="https://github.com/NHWai" target="_blank" id="profile-link">
+          <i class="fab fa-github"></i
+        ></a>
+        <a href="https://mobile.twitter.com/archerootw" target="_blank">
+          <i class="fab fa-twitter-square"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/naing-htet-wai-28770a194/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i
+        ></a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
