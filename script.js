@@ -6,11 +6,12 @@ const wsDesc = document.querySelector(".ws-description");
 const proBtn = document.querySelectorAll(".proj");
 const project = document.querySelector("#projects");
 const text =
-  "Creative Freelancer & Full Stack Developer specializing in JavaScript and React Framework";
+  "Hello! I am Naing Htet Wai. Creative freelancer and Front-End Developer who focuses on writing clean code. I love love HTML, CSS and JavaScript. ";
 const modal = document.querySelector(".modal");
 const myql = window.matchMedia("(max-width: 600px)");
 let idx = 1;
 
+console.log(proBtn);
 underSixPx(myql);
 myql.addListener(underSixPx);
 autoText();
@@ -56,10 +57,11 @@ function btnClick(btn) {
 function scroLL(el) {
   const elCoord = el.getBoundingClientRect();
 
-  window.scrollTo(
-    elCoord.left + window.pageXOffset,
-    elCoord.top + window.pageYOffset - 70
-  );
+  window.scrollTo({
+    left: elCoord.left + window.pageXOffset,
+    top: elCoord.top + window.pageYOffset - 70,
+    behavior: "smooth",
+  });
 }
 
 //Auto Text Effect
