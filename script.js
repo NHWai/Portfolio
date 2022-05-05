@@ -6,12 +6,12 @@ const wsDesc = document.querySelector(".ws-description");
 const proBtn = document.querySelectorAll(".proj");
 const project = document.querySelector("#projects");
 const text =
-  "Hello! I am Naing Htet Wai. Front-End Developer who focuses on writing clean code and creative web design with HTML, CSS and a touch of JavaScript.";
+  "Hello! I am Naing Htet Wai. Front-End Developer who focuses on writing clean code and creative web design with HTML, CSS and React JS.";
 const modal = document.querySelector(".modal");
 const myql = window.matchMedia("(max-width: 600px)");
 let idx = 1;
 
-console.log(proBtn);
+
 underSixPx(myql);
 myql.addListener(underSixPx);
 autoText();
